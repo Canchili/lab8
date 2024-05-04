@@ -13,3 +13,12 @@ struct humen {
   char gender;
   double height;
 };
+int main(void) {
+  FILE *f;
+  char n;
+  printf("Если вы хотите упорядочить по имени нажмите: n\nЕсли по фамилии: "
+         "f\nЕсли по году рождения: y\nЕсли по полу: g\nЕсли по росту: h\n");
+  scanf("%c", &n);
+
+  int i = 0;
+  char *s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
