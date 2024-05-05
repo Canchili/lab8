@@ -22,3 +22,11 @@ int main(void) {
 
   int i = 0;
   char *s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// printf("%c\n", s[4]);
+  struct humen m1[3],m2[3],m3[3];
+  f = fopen("humen_g.txt", "r");
+  for (i = 0; i < 3; i++) {
+    fscanf(f, "%s %s %d %c %lf", m1[i].name, m1[i].surname, &m1[i].year,
+           &m1[i].gender, &m1[i].height);
+    m2[i] = m1[i];
+  }
