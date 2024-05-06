@@ -30,3 +30,17 @@ int main(void) {
            &m1[i].gender, &m1[i].height);
     m2[i] = m1[i];
   }
+}
+  for (i = 0; i < 3; i++) {
+    for (int j = 0; j < 2; j++) {
+      if(n == "y")
+      {
+        if (m2[j].year > m2[j + 1].year) {
+        m3[j] = m2[j];
+        m2[j] = m2[j + 1];
+        m2[j + 1] = m3[j];
+        }
+      }
+      
+    }
+  }
