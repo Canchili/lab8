@@ -49,3 +49,10 @@ int main(void) {
     
     }
   }*/
+for (i = 0; i < 3; i++) {
+      printf("%s %s %d %c %lf\n", m1[i].name, m1[i].surname, m1[i].year,
+             m1[i].gender, m1[i].height);
+    }
+
+  return 0;
+}
